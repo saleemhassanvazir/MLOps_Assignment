@@ -3,9 +3,9 @@ import pandas as pd
 from joblib import load
 import dill
 
-with open('pipeline_Assignment.pkl', 'rb') as file:
+with open('"C:\Users\Lenovo\pipeline_Assignment.pkl"', 'rb') as file:
     model = dill.load(file)
-my_feature_dict = load('my_feature_dict_Assignment.pkl')
+my_feature_dict = load('"C:\Users\Lenovo\my_feature_dict_Assignment.pkl"')
 
 st.header("MLOPS assignment")
 st.subheader("Created by: Saleem Hassan Vazir")
