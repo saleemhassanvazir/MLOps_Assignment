@@ -3,7 +3,7 @@ import pandas as pd
 from joblib import load
 import dill
 
-with open('/home/adminuser/mlops_assignment/pipeline_Assignment.pkl', 'rb') as file:
+with open('./pipeline_Assignment.pkl', 'rb') as file:
     model = dill.load(file)
 my_feature_dict = load(r'my_feature_dict_Assignment.pkl')
 
