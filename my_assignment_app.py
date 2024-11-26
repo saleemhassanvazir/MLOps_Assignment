@@ -3,7 +3,9 @@ import pandas as pd
 from joblib import load
 import dill
 
-model = dill.load('pipeline_Assignment.pkl')
+with open('pipeline_Assignment.pkl', 'rb') as file:
+    model = dill.load(file)
+
 my_feature_dict = load("my_feature_dict_Assignment.pkl")
 
 st.header("MLOPS assignment")
