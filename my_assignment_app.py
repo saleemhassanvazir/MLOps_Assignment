@@ -5,7 +5,7 @@ import dill
 
 with open("C:/Users/Lenovo/Downloads/pipeline_Assignment.pkl", 'rb') as file:
     model = dill.load(file)
-my_feature_dict = load("C:\Users\Lenovo\Downloads\my_feature_dict_Assignment.pkl")
+my_feature_dict = load("C:/Users/Lenovo/Downloads/my_feature_dict_Assignment.pkl")
 
 st.header("MLOPS assignment")
 st.subheader("Created by: Saleem Hassan Vazir")
